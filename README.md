@@ -60,4 +60,9 @@ The algorithms included are broken down into the following categories:
 
 When predicting credit risk, recall is more important for a bank than precision. If a customer defaults on an loan, the bank is at risk of losing its principal, whereas if they assign a higher-risk rating to a customer and he does not default, the bank will earn more in interest than if they assigned a lower-risk rating. However, if the model is not precise and assigns high-risk ratings to customers when they are low-risk, the bank would risk losing the customer if another bank charged a lower interest rate or required less collateral.
 
+Based on the data provided, I would not suggest using any of these models for the following reasons:
+ * All of the models tested have f1 scores below .2.
+ * The average accuracy score of the models was 71%, with 4 of the models being less than 70% accurate.
+ * Although the most accurate model, EasyEnsembleClassifier, had an accuracy of 93%, it only had a precision of 9%, meaning it was extremely conservative and classified too many customers as high-risk.
 
+The main cause of the model weakness is due to the use of binary classifications for risk. Credit risk is better represented as either a continuous variable or a discrete variable with many different buckets. In addition, concentration risk is also a large factor, as a customer may be considered "low-risk", but may cause a bank to become overexposed to a specific sector or loan type. 
