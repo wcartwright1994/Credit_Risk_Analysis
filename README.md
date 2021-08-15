@@ -13,9 +13,9 @@ The algorithms included are broken down into the following categories:
 ## Results
 
 **Oversampling - Random**
-Accuracy: 67%
-Precision: 1%
-Recall: 70%
+ * Accuracy: 67%
+ * Precision: 1%
+ * Recall: 70%
 
 ![RandomOversampling](https://user-images.githubusercontent.com/82549092/129476630-06222f8c-5c3f-4515-8917-31ef1b8c80b8.PNG)
 
@@ -58,5 +58,6 @@ Recall: 70%
 
 ## Summary
 
+When predicting credit risk, recall is more important for a bank than precision. If a customer defaults on an loan, the bank is at risk of losing its principal, whereas if they assign a higher-risk rating to a customer and he does not default, the bank will earn more in interest than if they assigned a lower-risk rating. However, if the model is not precise and assigns high-risk ratings to customers when they are low-risk, the bank would risk losing the customer if another bank charged a lower interest rate or required less collateral.
 
 
